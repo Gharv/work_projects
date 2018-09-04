@@ -1,0 +1,52 @@
+---
+title: 'Example'
+author: 'Greg Harvey'
+date: '2018-09-04'
+description: Statistics and the Logic of Discovery.
+slug: data-story
+tags: test
+categories: []
+---
+
+<script src="hideOutput.js"></script>
+
+<link rel="stylesheet" type="text/css" href="fold.css">
+
+data story test run 
+
+Example with no hiding code:
+
+```{r}
+x <- 1
+print(x)
+```
+
+Example hiding only the source code: 
+
+<div class="fold s">
+```{r}
+x <- 2
+print(x)
+```
+</div>
+
+Example hiding only the output of the code: 
+
+<div class="fold o">
+```{r}
+x <- 3
+print(x)
+```
+</div>
+
+Example hiding the source code and the output: 
+
+<div class="fold s o">
+```{r}
+x <- 4
+print(x)
+```
+</div>
+
+
+Got this idea from [stackoverflow](https://stackoverflow.com/questions/37755037/how-to-add-code-folding-to-output-chunks-in-rmarkdown-html-documents)
