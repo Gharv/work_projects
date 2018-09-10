@@ -9,6 +9,12 @@ $(document).ready(function() {
       $('pre.r', this).prepend("<div class=\"showopt\">Code</div><br style=\"line-height:22px;\"/>");
       $('pre.r', this).children('code').attr('class', 'folded');
     }
+    
+    // add button to source code chunks for python
+    if ( $(this).hasClass('s') ) {
+      $('pre.python', this).prepend("<div class=\"showopt\">Code</div><br style=\"line-height:22px;\"/>");
+      $('pre.python', this).children('code').attr('class', 'folded');
+    }
 
     // add button to output chunks
     if ( $(this).hasClass('o') ) {
