@@ -29,18 +29,16 @@ $(document).ready(function() {
   // function to toggle the visibility
   $('.showopt').click(function() {
     var label = $(this).html();
-    if (label.indexOf("Code") >= 0) {
-      $(this).html(label.replace("Code", "Hide"));
-    } else {
-      $(this).html(label.replace("Hide", "Code"));
-    }
-    /*
-    if (label.indexOf("Output") >= 0) {
+    if (label.indexOf("Code") === 0) {
+      $(this).html(label.replace("Code", " Hide"));
+    } else if (label.indexOf("Hide") === 1) {
+      $(this).html(label.replace(" Hide", "Code"));
+    } else if (label.indexOf("Output") === 0) {
       $(this).html(label.replace("Output", "Hide"));
     } else {
-      $(this).html(label.replace("Hide", "Code"));
+      $(this).html(label.replace("Hide", "Output"));
     }
-    */
+    
     $(this).siblings('code, img').slideToggle('fast', 'swing');
   });
 });
