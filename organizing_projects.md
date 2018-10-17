@@ -61,7 +61,8 @@ Very Simple Project Template
 For a very small project and typically how I start all my projects, not knowing how deep I want to go, I will use the following template.
 
 > proj/
-> |--- analysis-functions.R |--- data/
+> |--- analysis-functions.R
+> |--- data/
 > |--- analysis.R
 
 Here I do not have an `R` folder yet because I may have only a few functions. Even though the project may be small it is still very important to keep functions and analysis separate.
