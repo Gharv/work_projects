@@ -1,4 +1,4 @@
-Organizing Your Projects And Creating A Package
+Organizing Your Projects
 ================
 
 Why Organization Is Neccessary
@@ -26,10 +26,10 @@ Our Project Structure
 
 This gives us our overarching project structure that looks like:
 
-    proj/  
-    |--- R/  
-    |--- data/  
-    |--- analysis.R  
+proj/
+|— R/
+|— data/
+|— analysis.R
 
 R Folder
 --------
@@ -60,10 +60,10 @@ Very Simple Project Template
 
 For a very small project and typically how I start all my projects, not knowing how deep I want to go, I will use the following template.
 
-    proj/  
-    |--- analysis-functions.R  
-    |--- data/  
-    |--- analysis.R  
+proj/
+|— analysis-functions.R
+|— data/
+|— analysis.R
 
 Here I do not have an `R` folder yet because I may have only a few functions. Even though the project may be small it is still very important to keep functions and analysis separate.
 
@@ -76,3 +76,5 @@ Conclusion
 ==========
 
 Organization will help keep you sane and save a lot of time, it is well worth the little upfront time. This is also a great beginning for organizing projects because this follows a very similar pattern to the projects are built. Getting used to these simple ideas and implementing them into your own projects will also help you understand and interpret others projects that follow the same pattern (which many do). There is much more that can go into organizing a project and creating a package. Next we will look into testing of our code.
+
+For creating a package it will use a similar layout but you can look at [this online book](http://r-pkgs.had.co.nz/package.html) from Hadley Wickham's *Advanced R Programming*.
