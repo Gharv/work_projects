@@ -1,0 +1,20 @@
+---
+title: embed test
+author: Greg Harvey
+date: '2018-10-29'
+slug: embed-test
+categories:
+  - R
+tags:
+  - data science
+---
+
+Needed to add images to img folder in static and reference them with "/img/file_name.png"  
+
+Look into https://yihui.name/en/2018/09/target-blank/ if links do not open in new tab.  
+
+Might be able to add html base tag to file or here in this window. https://stackoverflow.com/questions/1037839/how-to-force-link-from-iframe-to-be-opened-in-the-parent-window
+
+<base target="_parent">
+
+<iframe src="/html/2018-10-17-competition.html" width="900" height="1280" style="border: none;" scrolling="no"></iframe>
